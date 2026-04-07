@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Azmi Fauzil Adhim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fcfcfc;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        .text-teal { color: #009688; }
+        .bg-teal { background-color: #009688; }
+
+        /* Hero Section */
+        .hero-section {
+            background-color: #ffb74d;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            padding: 50px 0;
+        }
+
+        .hero-card {
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .profile-img-container {
+            background: url('https://via.placeholder.com/400x500/20c997/ffffff?text=FOTO+AZMI') no-repeat center;
+            background-size: cover;
+            min-height: 450px;
+            position: relative;
+        }
+
+        .brush-effect {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 150px;
+            background: rgba(0, 150, 136, 0.2);
+            clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 40%);
+        }
+
+        .nav-link { font-weight: 600; color: #333 !important; }
+
+        .section-padding { padding: 80px 0; }
+
+        .card-custom {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .card-custom:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Timeline Pendidikan */
+        .timeline-item {
+            border-left: 4px solid #ffb74d;
+            padding-left: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        /* Sertifikat Image */
+        .cert-img {
+            width: 100%;
+            border-radius: 15px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .cert-img:hover { transform: scale(1.03); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent pt-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">AzFzil.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Saya</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sertifikat">Sertifikat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="hero-section">
+        <div class="container">
+            <div class="hero-card bg-white p-4 p-md-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-3 fw-bold mb-4">Halo, Saya <span class="text-teal">Azmi Fauzil Adhim</span></h1>
+                        <p class="lead text-muted">
+                            Siswa SMKS Mahaputra Cerdas Utama | 
+                            Jurusan Pengembangan Perangkat Lunak dan GIM (PPLG)
+                        </p>
+                    </div>
+                    <div class="col-lg-6 mt-5 mt-lg-0 text-center">
+                        <div class="profile-img-container rounded-4">
+                            <div class="brush-effect"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-4">Tentang Saya</h2>
+                    <p class="lead text-muted" style="text-align: justify;">
+                        Saya adalah seorang pelajar yang memiliki minat besar di dunia teknologi, khususnya dalam pembuatan website. Sebagai siswa jurusan PPLG, saya telah mempelajari dasar-dasar pemrograman seperti HTML, CSS, dan PHP. Saya senang memecahkan masalah melalui baris kode dan selalu antusias untuk mempelajari teknologi baru demi meningkatkan kemampuan saya di industri digital.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pendidikan" class="bg-light section-padding">
+        <div class="container">
+            <h2 class="fw-bold mb-5">Riwayat Pendidikan</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="timeline-item">
+                        <h5>SMKS Mahaputra Cerdas Utama</h5>
+                        <p class="text-teal fw-bold">PPLG (Pengembangan Perangkat Lunak dan GIM)</p>
+                        <p class="text-muted small">2024 - Sekarang</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>SMPN 1 Pameungpeuk</h5>
+                        <p class="text-muted">Lulus Tahun 2024</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>SDN Mengger 01</h5>
+                        <p class="text-muted">Lulus Tahun 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sertifikat" class="section-padding">
+        <div class="container">
+            <h2 class="fw-bold mb-5 text-center">Sertifikat</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card card-custom p-3 text-center">
+                        <img src="https://via.placeholder.com/600x400/eee?text=Sertifikat+Agate" class="cert-img shadow-sm" alt="Sertifikat 1">
+                        <p class="mt-3 fw-bold mb-0">Webinar Game Development - Agate</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-3 text-center">
+                        <img src="https://via.placeholder.com/600x400/eee?text=Sertifikat+Dicoding" class="cert-img shadow-sm" alt="Sertifikat 2">
+                        <p class="mt-3 fw-bold mb-0">Webinar Dasar AI - Dicoding</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-3 text-center">
+                        <img src="https://via.placeholder.com/600x400/eee?text=AI+Learning" class="cert-img shadow-sm" alt="Sertifikat 3">
+                        <p class="mt-3 fw-bold mb-0">AI Learning - Dicoding</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="bg-light section-padding">
+        <div class="container">
+            <h2 class="fw-bold mb-5">Project Terbaru</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400" class="img-fluid rounded-4 shadow-sm mb-3" alt="Project 1">
+                    <h5>Landing Page Marketplace</h5>
+                    <p class="small text-muted">UI/UX Design | Figma</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400" class="img-fluid rounded-4 shadow-sm mb-3" alt="Project 2">
+                    <h5>Landing Page Sekolah</h5>
+                    <p class="small text-muted">UI/UX Design | Figma</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak" class="bg-dark text-white section-padding">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-5">Kontak Saya</h2>
+            
+            <div class="row justify-content-center g-4 mb-5">
+                <div class="col-6 col-md-2">
+                    <a href="https://wa.me/6282128684464" target="_blank" class="text-white text-decoration-none">
+                        <div class="p-4 border border-secondary rounded-4 card-custom bg-dark h-100 d-flex flex-column align-items-center justify-content-center">
+                            <i class="fab fa-whatsapp fa-3x text-success mb-3"></i>
+                            <p class="small mb-0">WhatsApp</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <a href="mailto:azmi10fauzil@gmail.com" class="text-white text-decoration-none">
+                        <div class="p-4 border border-secondary rounded-4 card-custom bg-dark h-100 d-flex flex-column align-items-center justify-content-center">
+                            <i class="fas fa-envelope fa-3x text-info mb-3"></i>
+                            <p class="small mb-0">Email</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <a href="https://www.instagram.com/azmifauzill" target="_blank" class="text-white text-decoration-none">
+                        <div class="p-4 border border-secondary rounded-4 card-custom bg-dark h-100 d-flex flex-column align-items-center justify-content-center">
+                            <i class="fab fa-instagram fa-3x text-danger mb-3"></i>
+                            <p class="small mb-0">Instagram</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <a href="https://github.com/AzmiFauzil" target="_blank" class="text-white text-decoration-none">
+                        <div class="p-4 border border-secondary rounded-4 card-custom bg-dark h-100 d-flex flex-column align-items-center justify-content-center">
+                            <i class="fab fa-github fa-3x text-white mb-3"></i>
+                            <p class="small mb-0">GitHub</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <hr class="my-5 opacity-25">
+            <p class="small opacity-50">&copy; 2026 Azmi Fauzil. All Rights Reserved.</p>
+        </div>
+    </footer>
