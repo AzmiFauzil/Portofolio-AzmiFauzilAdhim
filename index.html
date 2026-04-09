@@ -164,6 +164,43 @@
         /* .project-card:hover .project-img-container img {
             transform: scale(1.1); 
         } */
+
+        .profile-img-container {
+            background-color: #e6f4f2;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            object-position: center 10%; 
+            position: relative;
+            z-index: 2;
+        }
+
+        .brush-effect {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 150px;
+            background: rgba(0, 150, 136, 0.2);
+            clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 40%);
+            z-index: 1;
+        }
+
+        @media (max-width: 991px) {
+            .profile-img-container {
+                height: 400px;
+                margin-top: 20px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -188,25 +225,31 @@
     </nav>
 
     <section id="beranda" class="hero-section">
-        <div class="container">
-            <div class="hero-card bg-white p-4 p-md-5">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h1 class="display-3 fw-bold mb-4">Halo, Saya <span class="text-teal">Azmi Fauzil Adhim</span></h1>
-                        <p class="lead text-muted">
-                            Siswa SMKS Mahaputra Cerdas Utama | 
-                            Jurusan Pengembangan Perangkat Lunak dan GIM (PPLG)
-                        </p>
-                    </div>
-                    <div class="col-lg-6 mt-5 mt-lg-0 text-center">
-                        <div class="profile-img-container rounded-4">
-                            <div class="brush-effect"></div>
-                        </div>
+    <div class="container">
+        <div class="hero-card bg-white p-4 p-md-5">
+            <div class="row align-items-center">
+                
+                <div class="col-lg-6 px-md-5">
+                    <h1 class="display-3 fw-bold mb-4">
+                        Halo, Saya <span class="text-teal">Azmi Fauzil Adhim</span>
+                    </h1>
+                    <p class="lead text-muted">
+                        Siswa SMKS Mahaputra Cerdas Utama | <br>
+                        Jurusan Pengembangan Perangkat Lunak dan GIM (PPLG)
+                    </p>
+                </div>
+
+                <div class="col-lg-6 mt-5 mt-lg-0 text-center">
+                    <div class="profile-img-container rounded-4">
+                        <img src="dokSaya/azmifzilkasep.png" alt="Azmi Fauzil Adhim">
+                        <div class="brush-effect"></div>
                     </div>
                 </div>
+
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="tentang" class="section-padding">
         <div class="container">
@@ -311,7 +354,7 @@
                 <div class="col-md-6">
                     <div class="project-card card-custom">
                         <div class="project-img-container p-0 overflow-hidden">
-                            <img src="img/ecommerce.jpg" class="w-100 h-100 object-fit-cover" alt="E-Commerce"> 
+                            <img src="dokProject/ecomeer.png" class="w-100 h-100 object-fit-cover" alt="E-Commerce"> 
                         </div>
                         <div class="project-content">
                             <h3 class="project-title">Desain Tampilan Website E-Commerce</h3>
