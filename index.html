@@ -7,207 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-    <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #fcfcfc;
-            color: #333;
-            scroll-behavior: smooth;
-        }
-
-        .text-teal { color: #009688; }
-        .bg-teal { background-color: #009688; }
-
-        /* Hero Section */
-        .hero-section {
-            background-color: #ffb74d;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-            padding: 50px 0;
-        }
-
-        .hero-card {
-            background: white;
-            border-radius: 30px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .profile-img-container {
-            background: url('https://via.placeholder.com/400x500/20c997/ffffff?text=FOTO+AZMI') no-repeat center;
-            background-size: cover;
-            min-height: 450px;
-            position: relative;
-        }
-
-        .brush-effect {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 150px;
-            background: rgba(0, 150, 136, 0.2);
-            clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 40%);
-        }
-
-        .nav-link { font-weight: 600; color: #333 !important; }
-
-        .section-padding { padding: 80px 0; }
-
-        .card-custom {
-            border: none;
-            border-radius: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-        }
-        
-        .card-custom:hover {
-            transform: translateY(-10px);
-        }
-
-        
-        .timeline-item {
-            border-left: 4px solid #ffb74d;
-            padding-left: 20px;
-            margin-bottom: 30px;
-            position: relative;
-        }
-
-        .cert-img {
-            width: 100%;
-            border-radius: 15px;
-            transition: transform 0.3s;
-            cursor: pointer;
-        }
-        .cert-img:hover { transform: scale(1.03); }
-
-        .project-card {
-            background-color: #ffffff;
-            border-radius: 25px;
-            overflow: hidden;
-            border: none;
-            height: 100%;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .project-img-container {
-            background-color: #f8f9fa;
-            height: 220px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-        }
-
-        .project-content {
-            padding: 30px;
-        }
-
-        .project-number {
-            color: #009688;
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: bold;
-            margin-bottom: 10px;
-            display: block;
-            font-size: 1.1rem;
-        }
-
-        .project-title {
-            color: #222;
-            font-weight: 700;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-
-        .project-description {
-            color: #666;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 25px;
-        }
-
-        .tech-stack {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .tech-badge {
-            padding: 5px 15px;
-            background-color: #e6f4f2;
-            border: 1px solid #009688;
-            color: #009688;
-            border-radius: 8px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        .project-img-container {
-            background-color: #f8f9fa;
-            height: 250px; 
-            overflow: hidden;
-        }
-
-        .project-img-container img {
-            transition: transform 0.5s ease;
-        }
-
-        /* .project-card:hover .project-img-container img {
-            transform: scale(1.1); 
-        } */
-
-        .profile-img-container {
-            background-color: #e6f4f2;
-            height: 500px;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .profile-img-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; 
-            object-position: center 10%; 
-            position: relative;
-            z-index: 2;
-        }
-
-        .brush-effect {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 150px;
-            background: rgba(0, 150, 136, 0.2);
-            clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 40%);
-            z-index: 1;
-        }
-
-        @media (max-width: 991px) {
-            .profile-img-container {
-                height: 400px;
-                margin-top: 20px;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white shadow-sm pt-3 pb-3">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-3" href="#">AzFzil.</a>
+            <a class="navbar-brand fw-bold fs-3" href="#">azmifa</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -230,10 +36,10 @@
             <div class="row align-items-center">
                 
                 <div class="col-lg-6 px-md-5">
-                    <h1 class="display-3 fw-bold mb-4">
-                        Halo, Saya <span class="text-teal">Azmi Fauzil Adhim</span>
+                    <h1 class="display-5 display-md-4 fw-bold mb-4">
+                        Halo, Saya <br> <span class="text-teal">Azmi Fauzil Adhim</span>
                     </h1>
-                    <p class="lead text-muted">
+                    <p class="fs-6 fs-md-5 text-muted">
                         Siswa SMKS Mahaputra Cerdas Utama | <br>
                         Jurusan Pengembangan Perangkat Lunak dan GIM (PPLG)
                     </p>
@@ -365,6 +171,9 @@
                             <div class="tech-stack">
                                 <span class="tech-badge">UI/UX</span>
                             </div>
+                            <a href="LINK_WEBSITE_KAMU_DISINI" target="_blank" class="btn-view-project">
+                                Lihat Prototype <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -375,15 +184,18 @@
                             <img src="dokProject/pb.png" class="w-100 h-100 object-fit-cover" alt="Portfolio"> 
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Portofolio Bootstrap</h3>
+                            <h3 class="project-title">Website Statis</h3>
                             <p class="project-description">
-                                Website portofolio pribadi yang menampilkan informasi tentang diri saya. 
-                                Dibangun dengan menggunakan framework Bootstrap untuk memastikan tampilan yang responsif dan modern.
+                                Website statis sederhana yang menampilkan informasi tentang diri saya. 
+                                Dibuat dengan menggunakan framework Bootstrap untuk memastikan tampilan yang responsif dan modern.
                             </p>
                             <div class="tech-stack">
                                 <span class="tech-badge">HTML</span>
                                 <span class="tech-badge">Bootstrap</span>
                             </div>
+                            <a href="LINK_WEBSITE_KAMU_DISINI" target="_blank" class="btn-view-project">
+                                Lihat Website <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -403,6 +215,9 @@
                                 <span class="tech-badge">MIT App Inventor</span>
                                 <span class="tech-badge">Firebase</span>
                             </div>
+                            <a href="LINK_WEBSITE_KAMU_DISINI" target="_blank" class="btn-view-project">
+                                Download Aplikasi <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -416,11 +231,14 @@
                             <h3 class="project-title">Game MathFun</h3>
                             <p class="project-description">
                                 Game edukasi sederhana yang dirancang untuk membantu anak-anak belajar matematika dengan cara yang menyenangkan. 
-                                Menampilkan berbagai level dengan tantangan matematika yang berbeda-beda.
+                                Menampilkan berbagai operasi matematika yang berbeda-beda.
                             </p>
                             <div class="tech-stack">
                                 <span class="tech-badge">MIT App Inventor</span>
                             </div>
+                            <a href="LINK_WEBSITE_KAMU_DISINI" target="_blank" class="btn-view-project">
+                                Download Aplikasi <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -439,6 +257,9 @@
                             <div class="tech-stack">
                                 <span class="tech-badge">UI/UX</span>
                             </div>
+                            <a href="LINK_WEBSITE_KAMU_DISINI" target="_blank" class="btn-view-project">
+                                Lihat Prototype <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -457,6 +278,9 @@
                             <div class="tech-stack">
                                 <span class="tech-badge">UI/UX</span>
                             </div>
+                            <a href="LINK_WEBSITE_KAMU_DISINI" target="_blank" class="btn-view-project">
+                                Lihat Prototype <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -475,6 +299,9 @@
                             <div class="tech-stack">
                                 <span class="tech-badge">Wordpress</span>
                             </div>
+                            <a href="LINK_WEBSITE_KAMU_DISINI" target="_blank" class="btn-view-project">
+                                Lihat Website <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -493,6 +320,9 @@
                             <div class="tech-stack">
                                 <span class="tech-badge">UI/UX</span>
                             </div>
+                            <a href="LINK_WEBSITE_KAMU_DISINI" target="_blank" class="btn-view-project">
+                                Lihat Prototype <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
