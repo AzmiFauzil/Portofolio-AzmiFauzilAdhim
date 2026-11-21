@@ -99,6 +99,15 @@ body {
 }
 .cert-img:hover { transform: scale(1.03); }
 
+.cert-img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.cert-img:hover {
+    transform: scale(1.03);
+}
+
 .project-card {
     background-color: #ffffff;
     border-radius: 25px;
